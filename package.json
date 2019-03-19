@@ -13,18 +13,25 @@
     "typescript": "3.3.3333"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@rescripts/cli": "0.0.10",
+    "@rescripts/rescript-use-eslint-config": "0.0.9",
+    "@typescript-eslint/eslint-plugin": "1.4.2",
+    "@typescript-eslint/parser": "1.4.2",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-revolut-react": "0.0.20",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0"
+  }
 }
