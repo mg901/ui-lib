@@ -5,7 +5,8 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "rescripts build",
-    "test": "rescripts test --watchAll --updateSnapshot",
+    "test": "rescripts test --no-watch",
+    "test:watch": "rescripts test --watchAll --updateSnapshot",
     "lint": "cross-env eslint --fix .",
     "prettier": "cross-env prettier '*.{js,jsx,ts,tsx,json,md}' --write"
   },
