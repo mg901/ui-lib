@@ -35,17 +35,17 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
-        "@typescript-eslint/prefer-interface": 0
-      }
+        '@typescript-eslint/prefer-interface': 0,
+      },
     },
   ],
   rules: {
     'import/no-default-export': 2,
-    "import/no-extraneous-dependencies": 0,
+    'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
     'react/jsx-filename-extension': 0,
-    "react/prop-types": 0,
-    "react/jsx-indent-props": 0,
+    'react/prop-types': 0,
+    'react/jsx-indent-props': 0,
     'import/namespace': 0,
     'import/named': 0,
   },
