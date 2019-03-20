@@ -3,6 +3,10 @@ var tsExtensions = ['.ts', '.tsx'];
 var allExtensions = jsExtensions.concat(tsExtensions);
 
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
   settings: {
     'import/extensions': allExtensions,
     'import/parsers': {
@@ -26,16 +30,22 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:import/typescript',
   ],
-  plugins: ['prettier', 'import'],
+  plugins: ['prettier', 'import', 'jest'],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        "@typescript-eslint/prefer-interface": 0
+      }
     },
   ],
   rules: {
     'import/no-default-export': 2,
+    "import/no-extraneous-dependencies": 0,
     'import/prefer-default-export': 0,
     'react/jsx-filename-extension': 0,
+    "react/prop-types": 0,
+    "react/jsx-indent-props": 0,
     'import/namespace': 0,
     'import/named': 0,
   },
