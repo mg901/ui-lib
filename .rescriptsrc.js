@@ -1,1 +1,1 @@
-module.exports = [['use-eslint-config', '.eslintrc']];
+module.exports = [['use-eslint-config', '.eslintrc.js']];
