@@ -1,3 +1,11 @@
 {
-  "*.{js,jsx,ts,tsx,json,md}": ["eslint --fix", "prettier --write", "git add"]
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx,ts,tsx,json,md}": [
+        "eslint --fix",
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
 }
